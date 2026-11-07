@@ -34,3 +34,39 @@ generatorConfig.xml
 third-party/nacos/derby.log
 third-party/nacos/data/
 third-party/nacos/work/
+
+### 补充：IDE 工程文件与本地工作区（原有规则保留） ###
+.idea/
+**/.idea/
+**/out/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+*.rej
+Thumbs.db
+ehthumbs.db
+
+### 补充：Maven 与编译产物 ###
+**/target/
+*.class
+.flattened-pom.xml
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
+release.properties
+.mvn/timing.properties
+# 不忽略 *.jar，避免误伤 maven-wrapper.jar 或需要入库的依赖包
+
+### 补充：日志与运行时产物 ###
+logs/
+*.log
+*.log.*
+derby.log
+hs_err_pid*
+replay_pid*
